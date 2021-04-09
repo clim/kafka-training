@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.apache.kafka:kafka-clients:2.5.0'
+}
+
+application {
+    mainClass = 'org.clim.kafka.producer.ProducerDemo'
+}

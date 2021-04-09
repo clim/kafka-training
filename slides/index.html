@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Kafka</title>
+
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/beige.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <img data-src="images/kafka_black_logo.png"/>
+                    <h3>Introduction to Apache Kafka</h3>
+                </section>
+
+                <section>
+                    <p>About me ...</p>
+                    <img data-src="images/profile_pic_circle.png">
+                    <p><span style="font-size: medium">Jack of many trades, master of some ...</span></p>
+                </section>
+
+                <section>
+                    <h4>What is this all about?</h4>
+                    <ul>
+                        <li>A brief introduction to Kafka and its ecosystem</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h4>What is Apache Kafka?</h4>
+                    </section>
+
+                    <section>
+                        <h4>What is Apache Kafka?</h4>
+                        <ul>
+                            <li>Kafka is a fast, scalable, durable, and fault-tolerant publish-subscribe messaging system</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>What are some of the use cases?</h4>
+                        <ul>
+                            <li>Messaging</li>
+                            <li>Stream Processing</li>
+                            <li>Event Sourcing</li>
+                            <li>ETL (Extract Transform Load></li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h4>Basic Components</h4>
+                        <img data-src="images/kafka_01.jpeg"/>
+                        <ul>
+                            <li>Producer - sends data asynchronously</li>
+                            <li>Zookeeper - distributed synchronization of nodes</li>
+                            <li>Kafka Broker - stores the data</li>
+                            <li>Consumer - pulls data from the broker</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <img data-src="images/demo_01.jpg"/>
+                    </section>
+
+                    <section>
+                        <img data-src="images/docker_01.png"/>
+                    </section>
+
+                    <section>
+                        <h4>Recap</h4>
+                        <ul>
+                            <li>The fastest way to run Kafka is via Docker</li>
+                            <li>Kafka needs Zookeeper in order to run</li>
+                            <li>To produce a message: Define configuration, Create ProducerRecord, Send</li>
+                            <li>To consume a message: Define configuration, Subscribe to a topic, Poll</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <h4>Kafka versus ActiveMQ</h4>
+                    <table>
+                        <thead>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Kafka</td>
+                            <td>ActiveMQ</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><span style="font-size: large; white-space: nowrap">Storage</span></td>
+                            <td><span style="font-size: large; white-space: nowrap">With Retention Period</span></td>
+                            <td><span style="font-size: large; white-space: nowrap">Messages are deleted after reading</span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: large; white-space: nowrap">Clustering Features</span></td>
+                            <td><span style="font-size: large; white-space: normal">Simple but solid clustering features - Scaling, Replication, Partitioning</span></td>
+                            <td><span style="font-size: large; white-space: normal">Complicated clustering architecture - topologies, load balancing</span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: large; white-space: nowrap">Performance</span></td>
+                            <td><span style="font-size: large; white-space: normal">Does not</span></td>
+                            <td><span style="font-size: large; white-space: normal">Degrades with additional consumers</span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: large; white-space: nowrap">Consumer</span></td>
+                            <td><span style="font-size: large; white-space: normal">Pull</span></td>
+                            <td><span style="font-size: large; white-space: normal">Push</span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: large; white-space: nowrap">Use Cases</span></td>
+                            <td><span style="font-size: large; white-space: normal">Messaging, Streaming, Event Sourcing, ETL</span></td>
+                            <td><span style="font-size: large; white-space: normal">Messaging</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h4>Is that it?!</h4>
+                </section>
+
+                <section>
+                    <section>
+                        <h4>Kafka Connect</h4>
+                    </section>
+
+                    <section>
+                        <h4>Kafka Connect</h4>
+                        <img data-src="images/kafka_01.jpeg"/>
+                    </section>
+
+                    <section>
+                        <h4>Kafka Connect</h4>
+                        <img data-src="images/kafka_02.jpeg"/>
+                    </section>
+
+                    <section>
+                        <h4>Kafka Connect</h4>
+                        <img data-src="images/kafka_03.jpeg"/>
+                    </section>
+
+                    <section>
+                        <h4>Kafka Connect</h4>
+                        <img data-src="images/kafka_04.jpeg"/>
+                    </section>
+
+                    <section>
+                        <img data-src="images/demo_01.jpg"/>
+                    </section>
+                </section>
+
+                <section>
+                    <h4>Kafka Ecosystem</h4>
+                    <img data-src="images/kafka_05.png"/>
+                </section>
+
+                <section>
+                    <table>
+                        <thead>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Resources</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><span style="font-size: large; white-space: nowrap">Training Contents</span></td>
+                            <td><span style="font-size: large; white-space: nowrap">https://github.com/clim/kafka-training.git</span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: large; white-space: nowrap">Tutorials</span></td>
+                            <td><span style="font-size: large; white-space: normal">https://developer.confluent.io/learn-kafka</span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: large; white-space: nowrap">Binary</span></td>
+                            <td><span style="font-size: large; white-space: normal">https://kafka.apache.org/downloads</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+            });
+        </script>
+    </body>
+</html>
