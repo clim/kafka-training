@@ -1,1 +1,1 @@
-# kafka-training
+# Kafka Training
